@@ -1,0 +1,304 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container {
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-auto-rows: max-content;
+}
+
+.search,
+.menu {
+    background-color: white;
+    grid-column: 2 / 4;
+}
+
+.search {
+    padding: 5px 40px;
+    display: grid;
+    grid-template-columns: 0.5fr 10fr 0.5fr 0.8fr 2fr;
+    align-items: center;
+    justify-content: end;
+    /* justify-items: start; */
+    gap: 10px;
+}
+
+.search input {
+    width: 38rem;
+    height: 2rem;
+    background-color: #E2E8F0;
+    box-shadow: none;
+    border: solid 0px;
+    border-radius: 1rem;
+}
+
+.profile-btn {
+    justify-self: center;
+    width: 3rem;
+    height: 3rem;
+    border: solid 0px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("./Assets/Images/User.svg");
+}
+
+#profile2x {
+    width: 5rem;
+    height: 5rem;
+}
+
+.menu {
+    padding: 5px 40px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 6fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.greetings {
+    justify-self: start;
+}
+
+#greeting {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.menu-btns {
+    display: grid;
+    align-items: center;
+    justify-self: end;
+    gap: 33px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu-btns>button {
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-color: #1992D3;
+    border: solid 0px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.sidebar {
+    background-color: #1992D3;
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    padding: 15px;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 50px;
+}
+
+.logo,
+.element {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.logo img {
+    width: 3rem;
+}
+
+.logo span {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.elements {
+    display: grid;
+    gap: 25px;
+    grid-auto-rows: max-content;
+}
+
+.small-btn {
+    justify-self: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 0px;
+}
+
+.element span {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+.projects-container {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    padding: 30px 15px;
+}
+
+.projects {
+    padding-top: 15px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.project-card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    height: 220px;
+    border-radius: 0.5rem;
+    border-left: solid 0.5rem #F0B329;
+}
+
+.project-title {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: start;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #636363;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 60px;
+    text-align: start;
+}
+
+.project-actions {
+    margin-top: 4.5rem;
+    padding-right: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1rem);
+    justify-content: end;
+}
+
+
+.announcements-container {
+    grid-row: 3 / 4;
+    padding: 30px 25px 0px 25px;
+}
+
+.announcements {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    padding: 30px 20px;
+    border-radius: 0.5rem;
+
+    display: grid;
+    gap: 20px;
+}
+
+.announcement-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0 10px;
+    text-align: start;
+}
+
+.announcement-description {
+    font-size: 0.8rem;
+    color: #636363;
+    padding: 0 10px;
+    text-align: start;
+}
+
+.trending-container {
+    grid-row: 4 / 5;
+    padding: 30px 25px 0px 25px;
+}
+
+.line-break {
+    background-color: #c7c5c5;
+    height: 1px;
+}
+
+.header {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
